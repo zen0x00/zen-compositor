@@ -4,4 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-smithay = { version = "0.3", default-features = false, features = ["backend_drm", "backend_libinput", "renderer_gl"] }
+smithay = { version = "0.3", features = ["backend_drm", "backend_libinput", "renderer_gl"] }
+anyhow = "1.0"
+

@@ -1,6 +1,10 @@
+use std::thread;
+use std::time::Duration;
+
 fn main() {
-    println!("ZenCompositor starting...");
+    println!("ZenCompositor initializing DRM backend...");
+
     loop {
-        std::thread::sleep(std::time::Duration::from_secs(1));
+        thread::sleep(Duration::from_secs(1));
     }
 }
